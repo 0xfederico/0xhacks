@@ -1,16 +1,15 @@
+image: ruby:3.0
+
+before_script:
+  - gem install bundler
+  - bundle install
+
 pages:
- script:
- - mkdir .public
- - cp all-tags.html .public
- - cp -r assets .public
- - cp _config.yml .public
- - cp index.html .public
- - cp -r _layouts .public
- - cp -r _posts .public
- - cp whoami.html .public
- - mv .public public
- artifacts:
+  stage: deploy
+  script:
+  - bundle exec jekyll build -d public
+  artifacts:
     paths:
     - public
- only:
- - main
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
