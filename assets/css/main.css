@@ -1,0 +1,330 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+               Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+               "Segoe UI Symbol";
+  background-color: #fff;
+  color: #000;
+}
+
+body {
+  margin: 0;
+}
+
+.content {
+  margin: 0 10px;
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .content * {
+    max-width: 900px;
+  }
+}
+
+hr {
+  border: 0;
+  width: 100%;
+  clear: both;
+  display: block;
+  background-color: #222;
+  height: 1.5px;
+}
+
+
+/* ------------------------------- NAVBAR -------------------------------------- */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 35px;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav ul {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  top: 35px;
+  height: -webkit-calc(100% - 35px);
+  height: calc(100% - 35px);
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+  transform: translatex(100%);
+}
+
+nav ul li {
+  padding: 16px;
+  text-align: center;
+  font-size: 32px;
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px;
+  color: #000;
+}
+
+#logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+nav .icon-burger {
+  margin-right: 3px;
+  margin-top: 3px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+nav .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #000;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav #nav-toggle:checked ~ .icon-burger .line:nth-child(1) {
+  transform: translateY(10px) rotate(225deg);
+}
+
+nav #nav-toggle:checked ~ .icon-burger .line:nth-child(3) {
+  transform: translateY(-10px) rotate(-225deg);
+}
+
+nav #nav-toggle:checked ~ .icon-burger .line:nth-child(2) {
+  opacity: 0;
+}
+
+nav #nav-toggle:checked ~ ul {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+/* ------------------------------- THEME TOGGLE -------------------------------- */
+#switch_dark_light_theme {
+  display: none;
+}
+
+.icon-toggle-theme {
+  margin-left: 3px;
+  margin-top: 3px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 60px;
+  height: 24px;
+}
+
+.icon-toggle-theme .sun, .icon-toggle-theme .moon {
+  border-radius: 50%;
+  content: ' ';
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: all ease-in-out 0.3s;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-toggle-theme .moon {
+  filter: invert(100%);
+}
+
+#switch_dark_light_theme:checked ~ .icon-toggle-theme img {
+  transform: translateX(35px);
+}
+
+html[data-theme='dark'] .icon-toggle-theme .sun, html[data-theme='light'] .icon-toggle-theme .moon {
+  opacity: 0;
+}
+
+html[data-theme='dark'] .icon-toggle-theme .moon, html[data-theme='light'] .icon-toggle-theme .sun {
+  opacity: 1;
+}
+
+/* ------------------------------- FOOTER -------------------------------------- */
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  width: 100vw;
+  background-color: #ccc;
+}
+
+footer a {
+  color: #1440B8;
+}
+
+/* ------------------------------- SEARCH BAR ---------------------------------- */
+.searchBar {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput {
+  position: relative;
+  z-index: 10;
+  width: 80%;
+  margin-left: 15px;
+  height: 32px;
+  padding: 0 16px;
+  border-radius: 32px;
+  border: 2px solid #1440B8;
+  background-color: #fff;
+  color: #1440B8;
+}
+
+.searchInput::placeholder {
+  color: #333;
+}
+
+.searchInputIcon {
+  position: relative;
+  z-index: 10;
+  right: 30px;
+  width: 20px;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.searchCircle {
+  position: relative;
+  z-index: 10;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #1440B8;
+  border-radius: 10px;
+}
+
+.searchRectangle {
+  position: absolute;
+  right: 3px;
+  bottom: 4px;
+  width: 4px;
+  transform: rotate(45deg);
+  border: 1px solid #1440B8;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+
+
+
+
+/*
+-----------------------------------------------------------------------------
+-------------------------------D-----A-----R-----K---------------------------
+-----------------------------------------------------------------------------
+*/
+
+
+
+
+
+html[data-theme='dark'] {
+  background-color: #222;
+  color: #fff;
+}
+
+html[data-theme='dark'] hr {
+  background-color: #bbb;
+}
+
+/* ------------------------------- NAVBAR -------------------------------------- */
+html[data-theme='dark'] nav {
+  background-color: #222;
+}
+
+html[data-theme='dark'] nav ul {
+  background-color: #222;
+}
+
+html[data-theme='dark'] nav ul li a{
+  color: #fff;
+}
+
+html[data-theme='dark'] #logo {
+  color: #fff;
+}
+
+html[data-theme='dark'] nav .icon-burger .line {
+  background-color: #fff;
+}
+
+/* ------------------------------- THEME TOGGLE -------------------------------- */
+
+html[data-theme='dark'] .icon-toggle-theme {
+  background-color: #222;
+  border: 2px solid #fff;
+}
+
+/* ------------------------------- FOOTER -------------------------------------- */
+html[data-theme='dark'] footer {
+  background-color: #555;
+}
+
+html[data-theme='dark'] footer a {
+  color: #20C20E;
+}
+
+/* ------------------------------- SEARCH BAR ---------------------------------- */
+
+html[data-theme='dark'] .searchInput {
+  border: 2px solid #20C20E;
+  background-color: #222;
+  color: #20C20E;
+}
+
+html[data-theme='dark'] .searchInput::placeholder {
+  color: #ccc;
+}
+
+html[data-theme='dark'] .searchCircle {
+  border: 2px solid #20C20E;
+}
+
+html[data-theme='dark'] .searchRectangle {
+  border: 1px solid #20C20E;
+}

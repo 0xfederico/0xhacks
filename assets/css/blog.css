@@ -1,0 +1,108 @@
+/* ------------------------------- POSTS --------------------------------------- */
+.posts {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.posts ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.posts ul li {
+  border: 3px solid #1440B8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.posts ul li:not(:first-child) {
+  margin-top: 10px;
+}
+
+.posts ul li * {
+  width: 100%;
+}
+
+.posts ul li .post-title {
+  font-weight: bolder;
+  font-size: 18px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #eee;
+  color: #1440B8;
+}
+
+.posts ul li .post-title b {
+  padding: 0 5px;
+}
+
+.posts ul li .post-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 3px;
+  color: #1440B8;
+}
+
+.posts ul li .post-tags a {
+  width: auto;
+  padding: 3px;
+  color: #1440B8;
+}
+
+.posts ul li .post-meta {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+}
+
+.posts ul li .post-date {
+  text-align: right;
+}
+
+.posts ul li .post-date em {
+  padding-right: 5px;
+  font-style: italic;
+}
+
+
+
+
+
+/* 
+-----------------------------------------------------------------------------
+-------------------------------D-----A-----R-----K---------------------------
+-----------------------------------------------------------------------------
+*/
+
+
+
+
+
+/* ------------------------------- POSTS --------------------------------------- */
+html[data-theme='dark'] .posts ul li {
+  border: 2px solid #20C20E;
+}
+
+html[data-theme='dark'] .posts ul li .post-title {
+  background-color: #444;
+  color: #20C20E;
+}
+
+html[data-theme='dark'] .posts ul li .post-tags {
+  color: #20C20E;
+}
+
+html[data-theme='dark'] .posts ul li .post-tags a {
+  color: #20C20E;
+}

@@ -1,0 +1,97 @@
+.post {
+  width: 100%;
+}
+
+.post * {
+  max-width: 100%;
+}
+
+.post pre {
+  overflow-x: scroll;
+}
+
+.post table {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.post table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.post table, .post th, .post td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+.post th, .post td {
+  padding: 10px;
+}
+
+.post header {
+  width: 100%;
+  text-align: center;
+}
+
+.post-title {
+  margin: 0;
+  font-size: 42px;
+}
+
+.post-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-tags a {
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.7;
+  margin: auto;
+  color: #1440B8;
+}
+
+.post-date {
+  font-size: 14px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.post-content {
+  margin-top: 30px;
+}
+
+.post-content a {
+  color: #1440B8;
+}
+
+
+
+
+
+/*
+-----------------------------------------------------------------------------
+-------------------------------D-----A-----R-----K---------------------------
+-----------------------------------------------------------------------------
+*/
+
+
+
+
+
+html[data-theme='dark'] .post-content a {
+  color: #20C20E;
+}
+
+html[data-theme='dark'] .post-tags a {
+  color: #20C20E;
+}
+
+html[data-theme='dark'] .post table, html[data-theme='dark'] .post th, html[data-theme='dark'] .post td {
+  border: 1px solid #fff;
+}

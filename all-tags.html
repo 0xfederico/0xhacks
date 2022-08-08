@@ -1,0 +1,19 @@
+---
+layout: default
+title: All tags
+permalink: /all-tags/
+---
+
+<h3>Search in all available tags</h3>
+
+<div class="searchBar">
+  <input class="searchInput" type="text" placeholder='search...' oninput="filterElements(this, '.tag-cloud-links a')">
+  <div class="searchInputIcon">
+    <div class="searchCircle"></div>
+    <div class="searchRectangle"></div>
+  </div>
+</div>
+
+<div class="tag-cloud-links">
+{{ site | tag_cloud }}
+</div>

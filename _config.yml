@@ -1,0 +1,23 @@
+title: 0xfederico blog
+timezone: Europe/Rome
+lang: en-US
+
+# Build settings
+future: true
+incremental: false
+strict_front_matter: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll/tagging
+
+sass:
+  style: compressed
+
+# tags
+tag_page_layout: tag
+tag_page_dir: tag
+tag_permalink_style: pretty
+tag_page_data:
+  sitemap: false

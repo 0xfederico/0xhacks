@@ -1,0 +1,33 @@
+.tag-cloud-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.tag-cloud-links a {
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.7;
+  color: #1440B8;
+  margin: 0 5px;
+}
+
+
+
+
+
+/*
+-----------------------------------------------------------------------------
+-------------------------------D-----A-----R-----K---------------------------
+-----------------------------------------------------------------------------
+*/
+
+
+
+
+
+html[data-theme='dark'] .tag-cloud-links a {
+  color: #20C20E;
+}
