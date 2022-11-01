@@ -2,7 +2,7 @@
 layout: default
 title: "Home"
 permalink: /
-meta: "In this blog I will publish content related to my interests: cybersecurity, networking, FLOSS and privacy."
+meta: "In this blog we will publish content related to: CTF Writeups, Cybersecurity, Ethical Hacking, CVE, Certifications, and more..."
 ---
 
 <div class="searchBar">
@@ -25,11 +25,14 @@ meta: "In this blog I will publish content related to my interests: cybersecurit
         <a href="tag/{{ tag | downcase }}/">#{{ tag }}</a>
         {% endfor %}
       </div>
+      <div class="post-author">
+        <a href="{{ site.baseurl }}{% link aboutus.html %}">{{ post.author }}</a>
+      </div>
       <div class="post-meta">
-        <p>{{ post.meta }}</p>
+        <em>{{ post.meta }}</em>
       </div>
       <div class="post-date">
-        <em>{{ post.date | date: "%e %B, %Y %H:%M %Z" }}</em>
+        <p>{{ post.date | date: "%e %B, %Y %H:%M %Z" }}</p>
       </div>
     </li>
     {% endfor %}

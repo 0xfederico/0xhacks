@@ -10,8 +10,17 @@ layout: default
       <a href="/tag/{{ tag | downcase }}/">#{{ tag }}</a>
       {% endfor %}
     </div>
-    <h4 class="post-date">{{ page.date | date: "%e %B, %Y %H:%M %Z" }}</h4>
+    <div class="post-author">
+      <a href="{{ site.baseurl }}{% link aboutus.html %}">{{ page.author }}</a>
+    </div>
+    <div class="post-date">
+      <p>{{ page.date | date: "%e %B, %Y %H:%M %Z" }}</p>
+    </div>
   </header>
+  <hr>
+  <div class="post-meta">
+    <em>{{ page.meta }}</em>
+  </div>
   <hr>
   <br><br>
   <article class="post-content">

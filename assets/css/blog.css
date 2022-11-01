@@ -44,7 +44,8 @@
   padding: 0 5px;
 }
 
-.posts ul li .post-tags {
+.posts ul li .post-tags,
+.posts ul li .post-author {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -54,7 +55,8 @@
   color: #1440B8;
 }
 
-.posts ul li .post-tags a {
+.posts ul li .post-tags a,
+.posts ul li .post-author a {
   width: auto;
   padding: 3px;
   color: #1440B8;
@@ -103,6 +105,7 @@ html[data-theme='dark'] .posts ul li .post-tags {
   color: #20C20E;
 }
 
-html[data-theme='dark'] .posts ul li .post-tags a {
+html[data-theme='dark'] .posts ul li .post-tags a,
+html[data-theme='dark'] .posts ul li .post-author a {
   color: #20C20E;
 }

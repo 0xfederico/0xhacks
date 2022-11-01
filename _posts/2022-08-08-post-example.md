@@ -2,6 +2,7 @@
 layout: post
 title: "This post demonstrates post content styles"
 tags: [test]
+author: 0xfederico
 meta: test post
 ---
 
