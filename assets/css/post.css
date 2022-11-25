@@ -8,6 +8,8 @@
 
 .post pre {
   overflow-x: scroll;
+  background: #eee;
+  border-radius: 5px;
 }
 
 .post table {
@@ -102,4 +104,8 @@ html[data-theme='dark'] .post table,
 html[data-theme='dark'] .post th,
 html[data-theme='dark'] .post td {
   border: 1px solid #fff;
+}
+
+html[data-theme='dark'] .post pre {
+  background: black;
 }
