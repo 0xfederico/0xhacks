@@ -4,12 +4,21 @@
 
 .post * {
   max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .post pre {
   overflow-x: scroll;
   background: #eee;
   border-radius: 5px;
+}
+
+.post code {
+  font-size: 15px;
+}
+
+.post ul {
+  padding-left: 10px;
 }
 
 .post table {
@@ -57,6 +66,7 @@
   opacity: 0.7;
   margin: auto;
   color: #1440B8;
+  padding: 0 5px;
 }
 
 .post-meta {
