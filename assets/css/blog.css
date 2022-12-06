@@ -12,7 +12,7 @@
 }
 
 .posts ul li {
-  border: 3px solid #1440B8;
+  border: 3px solid #08309e;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   background-color: #eee;
-  color: #1440B8;
+  color: #08309e;
 }
 
 .posts ul li .post-title b {
@@ -52,14 +52,14 @@
   justify-content: space-around;
   text-align: center;
   padding-top: 3px;
-  color: #1440B8;
+  color: #08309e;
 }
 
 .posts ul li .post-tags a,
 .posts ul li .post-author a {
   width: auto;
   padding: 3px;
-  color: #1440B8;
+  color: #08309e;
 }
 
 .posts ul li .post-meta {

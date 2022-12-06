@@ -189,7 +189,7 @@ footer {
 }
 
 footer a {
-  color: #1440B8;
+  color: #08309e;
 }
 
 /* ------------------------------- SEARCH BAR ---------------------------------- */
@@ -211,9 +211,9 @@ footer a {
   height: 32px;
   padding: 0 16px;
   border-radius: 32px;
-  border: 2px solid #1440B8;
+  border: 2px solid #08309e;
   background-color: #fff;
-  color: #1440B8;
+  color: #08309e;
 }
 
 .searchInput::placeholder {
@@ -234,7 +234,7 @@ footer a {
   z-index: 10;
   width: 10px;
   height: 10px;
-  border: 2px solid #1440B8;
+  border: 2px solid #08309e;
   border-radius: 10px;
 }
 
@@ -244,7 +244,7 @@ footer a {
   bottom: 4px;
   width: 4px;
   transform: rotate(45deg);
-  border: 1px solid #1440B8;
+  border: 1px solid #08309e;
   border-top-right-radius: 1px;
   border-bottom-right-radius: 1px;
 }
