@@ -8,14 +8,14 @@ published: false
 ---
 
 # INDEX
-- [photobomb write-up](#photobomb-write-up)
-- [privesc](#privesc)
+- [Enumeration](#enumeration)
+- [Privesc](#privesc)
 
 <br><br>
 
 ![Photobomb box HTB](/assets/images/machines/Photobomb/Photobomb.jpg)
 
-## [Photobomb write-up](#photobomb-write-up)
+## Enumeration
 
 - `nmap -sV -p- -A 10.10.11.182`
     ```
@@ -225,7 +225,9 @@ published: false
 
     Reverse shell obtained!
 
-## [privesc](#privesc)
+<br><br>
+
+## Privesc
 
 I start analyzing the system with: `sudo -l`
 ```
@@ -236,7 +238,7 @@ User wizard may run the following commands on photobomb:
     (root) SETENV: NOPASSWD: /opt/cleanup.sh
 ```
 
-*NOTE: `env_reset` undoes all changes to `$PATH` https://www.sudo.ws/docs/man/1.8.13/sudoers.man/*
+*NOTE: `env_reset` undoes all changes to `$PATH` [https://www.sudo.ws/docs/man/1.8.13/sudoers.man/](https://www.sudo.ws/docs/man/1.8.13/sudoers.man/)*
 
 *NOTE: `SETENV` allows you to override this by adding the `--preserve-env` option to `sudo`*
 
