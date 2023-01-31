@@ -4,7 +4,6 @@ title: "Photobomb writeup"
 tags: ["Writeups", "HackTheBox", "CTF", "Sinatrarb", "Command-Injection", "Hijacking-Relative-Paths"]
 author: "0xhacks group"
 meta: "The box starts with a command injection vulnerability due to a bad filetype regex. The privesc instead thanks to the SETENV permission of sudo allows me to run a script as root and hijack the relative path of the find command."
-published: false
 ---
 
 # INDEX
