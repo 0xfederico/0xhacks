@@ -12,7 +12,7 @@ meta: "The box starts with a command injection vulnerability due to a bad filety
 
 <br><br>
 
-![Photobomb box HTB](/assets/images/machines/Photobomb/Photobomb.jpg)
+![Photobomb box HTB](/assets/images/machines/Photobomb/Photobomb.png)
 
 ## Enumeration
 
