@@ -691,7 +691,7 @@ published: false
 
 - Here's what was behind this docker container:
     - `cat /root/cacti/docker-compose.yml`
-        ```
+        ```yaml
         version: '2'
         services:
         web:
