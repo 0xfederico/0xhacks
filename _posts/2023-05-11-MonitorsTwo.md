@@ -4,7 +4,6 @@ title: "MonitorsTwo writeup"
 tags: ["Writeups", "HackTheBox", "CTF", "Cacti-1.2.22", "CVE-2022-46169", "Docker-Container-Breakout", "Docker-Enumeration", "Brute-Force", "Docker-20.10.5", "CVE-2021-41091"]
 author: 0xfederico
 meta: "This box starts with a website hosting Cacti version 1.2.22 that is vulnerable to CVE-2022-46169. Just follow the automated steps in the exploit on github to get a shell as www-data. The enumeration continues, I'm inside a docker container, thanks to a weakness in the capsh binary I can become root of the container. Docker breakout? Unfourtunally not, I searched a lot but I didn't find anything to break through the docker container. As well as seeing how the system is setup, to continue just look at the /entrypoint.sh script, connect to the MYSQL db in the other container, enumerate it, find the hashed credentials for the user marcus and do the classic bruteforce attack with rockyou.txt. Finally to become root just read the mailbox for user marcus, it is explained by the system administrators what vulnerabilities there are and the exploits are on github."
-published: false
 ---
 
 # INDEX
