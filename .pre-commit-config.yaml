@@ -1,0 +1,8 @@
+repos:
+- repo: local
+  hooks:
+    - id: tag-generator-py
+      name: tag-generator-py
+      entry: python tag_generator.py
+      language: python
+      pass_filenames: false

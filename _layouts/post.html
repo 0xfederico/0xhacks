@@ -7,11 +7,11 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <div class="post-tags">
       {% for tag in page.tags %}
-      <a href="/tag/{{ tag | downcase }}/">#{{ tag }}</a>
+      <a href="{{ site.baseurl }}/tag/{{ tag | downcase }}/">#{{ tag | downcase }}</a>
       {% endfor %}
     </div>
     <div class="post-author">
-      <a href="{{ site.baseurl }}{% link aboutus.html %}">{{ page.author }}</a>
+      <a href="{{ site.baseurl }}/aboutus/">{{ page.author }}</a>
     </div>
     <div class="post-date">
       <p>{{ page.date | date: "%e %B, %Y %H:%M %Z" }}</p>
