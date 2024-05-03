@@ -22,7 +22,7 @@ layout: default
   <ul>
     {% for post in page.posts %}
     <li>
-      <a href="{{ post.url }}" class="post-title"><b>{{ post.title }}</b></a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="post-title"><b>{{ post.title }}</b></a>
       <div class="post-meta">
         <p>{{ post.meta }}</p>
       </div>
