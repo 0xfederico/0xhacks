@@ -1,7 +1,7 @@
 title: 0xHacks blog
 timezone: Europe/Rome
 lang: en-US
-url: https://0xhacks.gitlab.io
+baseurl: /0xhacks
 
 # Build settings
 future: true
