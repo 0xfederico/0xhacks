@@ -14,7 +14,7 @@ meta: "This box starts with a website hosting Cacti version 1.2.22 that is vulne
 
 <br><br>
 
-![MonitorsTwo box HTB](/assets/images/machines/MonitorsTwo/MonitorsTwo.png)
+![MonitorsTwo box HTB](/0xhacks/assets/images/machines/MonitorsTwo/MonitorsTwo.png)
 
 ## Enumeration
 

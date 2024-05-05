@@ -12,7 +12,7 @@ meta: "The box starts with a command injection vulnerability due to a bad filety
 
 <br><br>
 
-![Photobomb box HTB](/assets/images/machines/Photobomb/Photobomb.png)
+![Photobomb box HTB](/0xhacks/assets/images/machines/Photobomb/Photobomb.png)
 
 ## Enumeration
 
@@ -59,7 +59,7 @@ meta: "The box starts with a command injection vulnerability due to a bad filety
 
 - We can try to do a directory enumeration, to find few particoular pages. For this purpose I'll use `dirbuster`:
 
-    ![Photobomb box HTB](/assets/images/machines/Photobomb/DirBuster.png)
+    ![Photobomb box HTB](/0xhacks/assets/images/machines/Photobomb/DirBuster.png)
 
 - Maybe `photobomb.js` could contain something interesting... let's check what's inside it:
     ```javascript
@@ -243,7 +243,7 @@ User wizard may run the following commands on photobomb:
 
 It looks like I can run the `/opt/cleanup.sh` file as root. I look at what this script does.
 
-![cleanup](/assets/images/machines//Photobomb/cleanup.png)
+![cleanup](/0xhacks/assets/images/machines/Photobomb/cleanup.png)
 
 Ok, as the name says this script cleans the log files and protects the original photos by making them accessible only to root.
 
